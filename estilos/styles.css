@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+/* Paleta de colores
+#62262e bordo
+#c03f4b rosa
+#f7cfc1 crema
+#8b6a69 bordo mas claro
+#c4b9c0 gris oscuro
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #c4b9c0;
+}
+
+nav {
+    width: 100%;
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-nav {
+    text-decoration: none;
+    color: #8b6a69;
+    font-size: 1.15em;
+    background-color: transparent;
+}
+
+.a-nav:hover {
+    color: #62262e;
+    text-decoration: underline;
+}
+
+ul {
+    background-color: transparent;
+    position: fixed;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+li {
+    background-color: transparent;
+}
+
+/* Main - Sobre mi */
+
+.container-principal {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.img-leonel {
+    width: 95%;
+    height: 95%;
+    object-fit: scale-down;
+}
+
+.container-presentacion {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #62262e;
+    padding: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-redes {
+    width: 3rem;
+}
+
+h1,
+h2,
+.p-presentacion {
+    margin: .5rem;
+}
+
+.redes {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.p-presentacion {
+    font-size: 1.25rem;
+}
+
+/* Seccion habilidades */
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.container-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    width: 25rem;
+    background-color: violet;
+}
+
+.img-habilidades {
+    width: 5rem;
+}
+
+h3,
+.p-habilidades,
+.img-habilidades {
+    background-color: blue;
+    margin-top: .25rem;
+}
+
+/* Proyectos  */
+
+.proyectos {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-proyectos {
+    background-color: brown;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    padding: .5em;
+}
+
+.img-proyectos {
+    width: 10rem;
+}
+
+/* CONTACTO */
+
+.contacto{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 45em;
+}
+
+h4{
+    background-color: blue;
+    font-size: 1.5em;
+}
+
+form{
+    width: 30em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+}
+
+input{
+    width: 100%;
+    height: 3em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    width: 100%;
+    height: 10vh;
+}
