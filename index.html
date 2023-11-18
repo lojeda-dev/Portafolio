@@ -14,6 +14,21 @@
 
 <body>
   <span id="sobre-mi"></span>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a class="a-nav" href="#sobre-mi">Sobre mí</a></li>
+        <li><a class="a-nav" href="#habilidades">Habilidades</a></li>
+        <li><a class="a-nav" href="#proyectos">Proyectos</a></li>
+        <li><a class="a-nav" href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    </nav>
+  </header>
   <main class="container-principal">
     <div class="container-img">
       <img class="img-leonel" src="imagenes/Leo-azul.png" alt="Foto de Leonel Ojeda">
@@ -23,7 +38,7 @@
       <h2>¡Hola, soy Leonel Ojeda!</h2>
       <p class="p-presentacion">Descubrí este mundo hace 3 años aproximadamente, desde entonces no eh dejado de
         <strong>aprender
-          y descubrir nuevas tecnologias.</strong> Mis primer acercamiento a la programación fue con <strong>HTML,
+          y descubrir nuevas tecnologias.</strong> Mi primer acercamiento a la programación fue con <strong>HTML,
           CSS y JavaScript.</strong>
         Actualmente, lo que me interesa es el desarrollo <strong>Backend.
       </p></strong>
@@ -39,16 +54,7 @@
       </div>
     </div>
   </main>
-  <header>
-    <nav>
-      <ul>
-        <li><a class="a-nav" href="#sobre-mi">Sobre mí</a></li>
-        <li><a class="a-nav" href="#habilidades">Habilidades</a></li>
-        <li><a class="a-nav" href="#proyectos">Proyectos</a></li>
-        <li><a class="a-nav" href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+ 
   <section class="habilidades" id="habilidades">
     <div class="container-habilidades">
       <img class="img-habilidades" src="imagenes/java.png" alt="Icono Java">
@@ -88,28 +94,24 @@
   </section>
   <section class="proyectos" id="proyectos">
     <div class="container-proyectos">
-      <a class="a-proyectos" href="https://integradorweb.ed.urltemporal.com/" target="_blank"><img class="img-proyectos"
-          src="imagenes/wapas.png" alt="Icono GitHub"></a>
+      <img class="img-proyectos" src="imagenes/wapas.png" alt="Icono GitHub">
       <h4 class="titulo-proyectos">WEB WAPAS</h4>
-      <p class="p-proyectos">Pagina de creación de contenido. Utilice solo HTML, CSS y PHP para enviar el formulario</p>
+      <a class="a-proyectos" href="https://integradorweb.ed.urltemporal.com/" target="_blank">VISITAR</a>
     </div>
     <div class="container-proyectos">
-      <a class="a-proyectos" href="https://lojeda-dev.github.io/Oradores/" target="_blank"><img class="img-proyectos"
-          src="imagenes/conf bs as.png" alt="Icono GitHub"></a>
+      <img class="img-proyectos" src="imagenes/conf bs as.png" alt="Icono GitHub">
       <h4 class="titulo-proyectos">CONFERENCIA BS AS</h4>
-      <p class="p-proyectos">En este proyecto desarrollé </p>
+      <a class="a-proyectos" href="https://lojeda-dev.github.io/Oradores/" target="_blank">VISITAR</a>
     </div>
     <div class="container-proyectos">
-      <a class="a-proyectos" href="https://lojeda-dev.github.io/DrumSet/" target="_blank"><img class="img-proyectos"
-          src="imagenes/drumset.png" alt="Icono GitHub"></a>
+      <img class="img-proyectos" src="imagenes/drumset.png" alt="Icono GitHub">
       <h4 class="titulo-proyectos">DRUMSET</h4>
-      <p class="p-proyectos"></p>
+      <a class="a-proyectos" href="https://lojeda-dev.github.io/DrumSet/" target="_blank">VISITAR</a>
     </div>
     <div class="container-proyectos">
-      <a class="a-proyectos" href="https://github.com/lojeda-dev/GestionApiRest" target="_blank"><img
-          class="img-proyectos" src="imagenes/API-REST.png" alt="Icono GitHub"></a>
+      <img class="img-proyectos" src="imagenes/API-REST.png" alt="Icono GitHub">
       <h4 class="titulo-proyectos">API REST</h4>
-      <p class="p-proyectos"></p>
+      <a class="a-proyectos" href="https://github.com/lojeda-dev/GestionApiRest" target="_blank">VISITAR</a>
     </div>
   </section>
   <section class="contacto" id="contacto">
@@ -126,6 +128,7 @@
   <footer class="footer">
     <p class="p-footer"><strong>Desarrollado por Leonel Ojeda</strong> (2023) &#169;</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -28,31 +28,53 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #8b6a69;
 }
 
 .a-nav {
     text-decoration: none;
-    color: #8b6a69;
+    color: #62262e;
     font-size: 1.15em;
-    background-color: transparent;
+    background-color: #8b6a69;
+
 }
 
 .a-nav:hover {
-    color: #62262e;
+    color: #c4b9c0;
     text-decoration: underline;
 }
 
 ul {
-    background-color: transparent;
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 50%;
+    background-color: #8b6a69;
 }
 
-li {
-    background-color: transparent;
+/* Menú hamburguesa */
+
+
+.nav-links.active {
+    display: flex;
+    margin-top: 0px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #62262e;
+    margin: 3px 0;
+    border-radius: 3px;
 }
 
 /* Main - Sobre mi */
@@ -83,7 +105,7 @@ li {
     align-items: center;
     flex-direction: column;
     color: #62262e;
-    padding: 1.5rem;
+    padding: 1.5em;
     text-align: center;
 }
 
@@ -96,35 +118,35 @@ li {
 }
 
 .img-redes {
-    width: 3rem;
+    width: 3em;
 }
 
 .img-redes:hover {
-    width: 3.25rem;
+    width: 3.25em;
     transition: .1s;
 }
 
 h1,
 h2,
 .p-presentacion {
-    margin: .5rem;
+    margin: .5em;
 }
 
 .redes {
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.5em;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2em;
     border-bottom: 3px solid #62262e;
 }
 
 .p-presentacion {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 /* Seccion habilidades */
@@ -136,7 +158,7 @@ h2 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 1.5rem;
+    padding: 1.5em;
 }
 
 .container-habilidades {
@@ -144,19 +166,19 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
-    width: 30rem;
+    margin: .5em;
+    width: 35em;
     text-align: center;
 }
 
 .img-habilidades {
-    width: 5rem;
+    width: 5em;
 }
 
 h3,
 .p-habilidades,
 .img-habilidades {
-    margin-top: .5rem;
+    margin-top: .5em;
 }
 
 h3,
@@ -170,14 +192,13 @@ h3,
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .container-proyectos {
-    width: 20rem;
-    height: 22rem;
+    width: 20em;
+    height: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,20 +208,37 @@ h3,
     border: 3px solid #8b6a69;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 5px 5px 15px #62262e;
+    box-shadow: 5px 5px 5px #62262e;
+    background-color: #8b6a69;
 }
 
 .titulo-proyectos {
     width: 100%;
     color: #62262e;
+    background-color: #8b6a69;
 }
 
-.p-proyectos{
+.p-proyectos {
     color: #62262e;
 }
 
 .img-proyectos {
     width: 100%;
+}
+
+.a-proyectos {
+    text-decoration: none;
+    color: #c4b9c0;
+    background-color: #62262e;
+    padding: .5em;
+    border-radius: 3px;
+}
+
+.a-proyectos:hover {
+    background-color: #8b6a69;
+    color: #62262e;
+    box-shadow: 5px 5px 2px #62262e;
+    transition: .3s;
 }
 
 /* CONTACTO */
@@ -277,4 +315,110 @@ footer {
 
 strong {
     background-color: transparent;
+}
+
+/* Media Query para mostrar u ocultar el menú hamburguesa */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        background-color: #8b6a69;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #8b6a69;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        z-index: 1;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+
+    }
+
+    .container-img,
+    .img-leonel {
+        display: none;
+    }
+
+    .container-principal {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .container-presentacion {
+        width: 100%;
+    }
+
+    .habilidades {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-habilidades {
+        width: 100%;
+    }
+
+    .proyectos {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contacto {
+        height: auto;
+        width: 100%;
+        padding: 2em;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .container-proyectos{
+       width: 15em;
+       height: 15em;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .p-footer{
+        font-size: .75em
+    }
+}
+
+@media (max-width: 1100px) {
+    .proyectos{
+        height: auto;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .habilidades{
+        margin-top: 3em;
+        height: auto;
+        flex-wrap: wrap;
+    }
 }
